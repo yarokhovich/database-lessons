@@ -9,7 +9,7 @@ JDBC API.
 Для установления соединения нужен JDBC драйвер для конкретной БД.
 
 1. Загрузка драйвера: `Class.forName("org.postgresql.Driver");`
-2.Подключение: `Connection con = DriverManager.getConnection("jdbc:postgresql://ip:port/имя_бд", "имя_пользователя", "пароль");`
+2.Подключение: `Connection con = DriverManager.getConnection("org.jjd.lessons.jdbc:postgresql://ip:port/имя_бд", "имя_пользователя", "пароль");`
 
 Класс Connection предоставляет множество методов для работы с БД, такие как получения метаданных (информация о таблицах,
 хранимых процедурах и т. п.), управления транзакциями, информации о текущей схеме, подключении и так далее.
