@@ -1,5 +1,7 @@
 package org.jjd.lessons.jdbc;
 
+import org.jjd.lessons.dao.Book;
+
 import java.sql.*;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -143,5 +145,7 @@ public class Examples {
         courses.add(new Course("Node JS", 3, 30000));
 
         bufferInsert(courses);
+
+
     }
 }

@@ -39,12 +39,14 @@
             <version>0.9.5.5</version>
         </dependency>
 
-        <!-- hibernate -->
+        <!-- hibernate / eclipseLink - реализации JPA (java persistence api)-->
         <dependency>
+            <!-- hibernate - ORM (object relational mapping) -->
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>5.4.31.Final</version>
         </dependency>
+
 
         <dependency>
             <groupId>org.hibernate</groupId>

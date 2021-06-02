@@ -51,9 +51,20 @@ public class BookDao implements Dao<Book, Integer>{
         return null;
     }
 
-    @Override
+    @Override //  save(Book entity): add или update в зависимости от
+    // наличия или отсутствия первичного ключа
     public void update(Book entity) {
-
+        String update = "UPDATE tb_books SET title = ?, page_count = ?" +
+                "WHERE id = ?";
+        try (PreparedStatement statement =
+                     PoolDataSource.getConnection().prepareStatement(update)){
+            statement.setString(1, entity.getTitle());
+            statement.setInt(2, entity.getPageCount());
+            statement.setInt(3, entity.getId());
+            statement.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println("Запрос не был выполнен " + e.getMessage());
+        }
     }
 
     @Override
