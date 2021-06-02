@@ -39,6 +39,20 @@
             <version>0.9.5.5</version>
         </dependency>
 
+        <!-- hibernate -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.4.31.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-jpamodelgen</artifactId>
+            <version>5.4.32.Final</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 <!-- + Add as Maven Project -->
 </project>
