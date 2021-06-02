@@ -3,7 +3,7 @@ package org.jjd.lessons.jdbc;
 import java.sql.*;
 import java.util.Arrays;
 import java.util.HashSet;
-
+// dao (data access object)
 public class Examples {
     // строка подключения
     private static final String CONNECTION_STR =
